@@ -1,0 +1,51 @@
+---
+title: "pepannot_guide"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{pepannot_guide}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+# Introduction to pepannot
+
+Welcome to the pepannot package vignette! This vignette provides a brief overview of how to use the pepannot package for annotating peptide sequences. 
+
+## What is pepannot?
+
+The pepannot package is use for annotating peptide sequences with various modifications. It allows you to easily add annotations such as [+80] for phosphorylation and [+16] for oxidation to peptide sequences, enhancing your ability to recognize which residues were modified.
+
+
+```{r setup}
+# Loading the pepannot package
+library(pepannot)
+```
+
+```{r}
+# Loading additional required packages
+library(readr)
+library(dplyr)
+```
+
+
+```{r}
+# Read the CSV file containing peptide data
+b <- readr::read_csv(system.file("extdata", "anon.csv", package = "pepannot"))
+```
+
+```{r}
+# Annotate peptide sequences with modifications
+c <- b |>
+  dplyr::rowwise() |>
+  dplyr::mutate(new_column_name = annotate_positions(seq, residue_posn)) |>
+  dplyr::mutate(another_column_name = annot_sequence(seq, residue_posn, pattern))
+```
+

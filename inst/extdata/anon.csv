@@ -1,0 +1,16 @@
+master_protein_accessions,seq,residue_posn,pattern
+ATY787,VHDDDEDVSSEDENETHNSNAVYYK,[S/T/Y],positions not distinguishable
+ATY788,VSSFEALQPATR,[S/T],positions not distinguishable
+ATY789,HSHHHSSSTPSAATPTPTAGAR,[S11; T16],----------*----*------
+ATY790,NLSGKAETMSTNVER,[M9]; [S3],--*-----*------
+ATY791,RSPEPHDSSEADSAEKPTHIR,[S13; S/T],positions not distinguishable
+ATY792,YGSTDHDNLSSGKKSPDSAK,[S/Y/T],positions not distinguishable
+ATY793,GGMTSHAAVVAR,[M3]; [T4],--**--------
+ATY794,GGMTSHAAVVAR,[T/S],positions not distinguishable
+ATY795,SESLGHRSDVSSPEAK,[S8; S],positions not distinguishable
+ATY796,RDSFSSKPYSR,[S/Y],positions not distinguishable
+ATY797,TPNIEPQGYSEEEEEEEEEVPAGNAAK,[Y/T/S],positions not distinguishable
+ATY798,YHGHSMSDPGSTYR,[M6]; [S/Y/T],----**--------
+ATY799,SKSSEDIYSR,[S/Y],positions not distinguishable
+ATY800,SGRTSEPNSEDEAAGVGKR,[T4; S5],---**--------------
+ATY801,VVKDHEDKDNDDGGYNSD,[Y/S],positions not distinguishable

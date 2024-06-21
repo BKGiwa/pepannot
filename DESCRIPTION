@@ -1,0 +1,24 @@
+Package: pepannot
+Type: Package
+Title: Annotate peptide sequences
+Version: 0.1.0
+Author: Boluwatife Giwa 
+Maintainer: Boluwatife Giwa <boluwatife.kafayat-giwa@tsl.ac.uk>
+Description: Annotate residue positions of sequences from mass spectrometry datasets.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+Imports:
+    stringr,
+    dplyr,
+    readr,
+    magrittr
+Depends:
+    R (>= 4.1.0)
+VignetteBuilder: knitr
